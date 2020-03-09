@@ -1,3 +1,60 @@
 {
-    "editor.tabSize": 1
+    "editor.fontSize": 22,
+    "editor.tokenColorCustomizations": {
+        "keywords": "#ca1fe0", // Anahtar Kelimeler
+        "strings": "#15b3be", // string..
+        "variables": "#1998ec", // Değişkenler
+        "types": "#d4e20c", // veri Tipleri
+        "textMateRules": [
+            {
+                "scope": "entity.other.inherited-class", // miras alınan sınıf
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "entity.name.function", // fonksiyonlar
+                "settings": {
+                    "foreground": "#2db7ee",
+                    "fontStyle": "italic",
+                }
+            },
+            {
+                "scope": "keyword.operator", // operatorler -> ,==, vs
+                "settings":{
+                        "foreground": "#b6f02f"
+                    }
+            },
+            {
+                "scope": "comment", //  Yorum Satırı
+                "settings": {
+                    "foreground": "#c9df4f",
+                    "fontStyle":"italic bold",
+                }
+            },
+            {
+                "scope": "keyword.other", // diğer anahtar kelimeler, use vs
+                "settings": {
+                    "foreground": "#ff004c"
+                }
+            },
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#a77815", // seçilen alanın arkaplan rengi
+        "editor.selectionHighlightBackground": "#00ff4c75", // tıklandığında seçilen arkaplan rengi
+        "diffEditor.removedTextBackground": "#af7878"
+    },
+    "bracketPairColorizer.colorMode" :"Independent",
+    "editor.matchBrackets" :"never",
+    "bracketPairColorizer.showBracketsInRuler": true,
+    "bracketPairColorizer.activeScopeCSS" :[
+        "borderStyle : solid;",
+        "borderWidth : 9px;",
+        "borderColor : #ffffff;",
+        "opacity: 0.9;",
+        "backgroundColor : #ffffff", 
+    ],
+    
+    
 }
